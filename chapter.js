@@ -1,15 +1,22 @@
+function restoreSavedPreferences() {
+    try {
+        var t = localStorage.getItem("selectedTheme") || localStorage.getItem("parda_theme") || "dark";
+        var f = localStorage.getItem("selectedFont") || localStorage.getItem("parda_font") || "literata";
+        var s = localStorage.getItem("selectedSize") || localStorage.getItem("parda_size") || "medium";
+        if (window.applyTheme) window.applyTheme(t);
+        if (window.applyFont) window.applyFont(f);
+        if (window.applySize) window.applySize(s);
+    } catch(e) {}
+}
+
+restoreSavedPreferences();
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // ==========================================
     // 0. RESTORE USER PREFERENCES
     // ==========================================
-    const savedTheme = localStorage.getItem('selectedTheme') || localStorage.getItem('parda_theme');
-    const savedFont = localStorage.getItem('selectedFont') || localStorage.getItem('parda_font');
-    const savedSize = localStorage.getItem('selectedSize') || localStorage.getItem('parda_size');
-
-    if (savedTheme) applyTheme(savedTheme);
-    if (savedFont) applyFont(savedFont);
-    if (savedSize) applySize(savedSize);
+    restoreSavedPreferences();
 
     // Dynamic Home logo link resolver
     const logoLink = document.querySelector("a.logo");

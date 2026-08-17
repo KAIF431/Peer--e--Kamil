@@ -24,6 +24,24 @@ window.applySize = function(sizeName) {
     localStorage.setItem('parda_size', sizeName);
 };
 
+function restoreSavedPreferences() {
+    try {
+        var t = localStorage.getItem("selectedTheme") || localStorage.getItem("parda_theme") || "dark";
+        var f = localStorage.getItem("selectedFont") || localStorage.getItem("parda_font") || "literata";
+        var s = localStorage.getItem("selectedSize") || localStorage.getItem("parda_size") || "medium";
+        window.applyTheme(t);
+        window.applyFont(f);
+        window.applySize(s);
+    } catch(e) {}
+}
+
+restoreSavedPreferences();
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", restoreSavedPreferences);
+} else {
+    restoreSavedPreferences();
+}
+
 function loadSavedHomeHighlights() {
     try {
         const saved = localStorage.getItem("user_highlights_" + window.location.pathname);
