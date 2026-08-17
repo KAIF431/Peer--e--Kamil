@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 03 | Peer-e-Kamil</title>
+    
+    <!-- OpenGraph & Social Media Preview -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Chapter 03 — Peer-e-Kamil">
+    <meta property="og:description" content="Read Chapter 03 of Peer-e-Kamil by Umera Ahmed. A profound Urdu novel of faith, guidance, and spiritual transformation.">
+    <meta property="og:image" content="peere_kamil.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="chapter.css">
+    <script>
+        (function() {
+            var t = localStorage.getItem("selectedTheme") || localStorage.getItem("parda_theme") || "dark";
+            var f = localStorage.getItem("selectedFont") || localStorage.getItem("parda_font") || "literata";
+            var s = localStorage.getItem("selectedSize") || localStorage.getItem("parda_size") || "medium";
+            document.documentElement.setAttribute("data-theme", t);
+            document.documentElement.setAttribute("data-font", f);
+            document.documentElement.setAttribute("data-size", s);
+        })();
+    </script>
+</head>
+<body>
+
+    <!-- TOP READING PROGRESS BAR -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <!-- SITE HEADER -->
+    <header class="site-header">
+        <a href="peer_e_kaamil.html" class="logo">Peer <span>-e- Kamil</span></a>
+        <div class="header-actions">
+            <button class="header-button audio-toggle-btn" onclick="toggleAmbient('calm', this)" title="Soft Calming Music">Sound</button>
+            <button class="header-button" id="openChapters">Chapters</button>
+            <button class="header-button" id="openSettings">Settings</button>
+        </div>
+    </header>
+
+    <!-- CHAPTER DRAWER (ALL 93 CHAPTERS) -->
+    <div class="chapter-drawer" id="chapterDrawer">
+        <div class="drawer-header">
+            <h3>Chapters Index (93 Chapters)</h3>
+            <button id="closeChapters">&times;</button>
+        </div>
+        <div class="drawer-content">
+        <a href="chapter1.html" class="chapter-link"><span>01</span> <div><strong>Chapter 01</strong></div></a>
+        <a href="chapter2.html" class="chapter-link"><span>02</span> <div><strong>Chapter 02</strong></div></a>
+        <a href="chapter3.html" class="chapter-link active"><span>03</span> <div><strong>Chapter 03</strong></div></a>
+        <a href="chapter4.html" class="chapter-link"><span>04</span> <div><strong>Chapter 04</strong></div></a>
+        <a href="chapter5.html" class="chapter-link"><span>05</span> <div><strong>Chapter 05</strong></div></a>
+        <a href="chapter6.html" class="chapter-link"><span>06</span> <div><strong>Chapter 06</strong></div></a>
+        <a href="chapter7.html" class="chapter-link"><span>07</span> <div><strong>Chapter 07</strong></div></a>
+        <a href="chapter8.html" class="chapter-link"><span>08</span> <div><strong>Chapter 08</strong></div></a>
+        <a href="chapter9.html" class="chapter-link"><span>09</span> <div><strong>Chapter 09</strong></div></a>
+        <a href="chapter10.html" class="chapter-link"><span>10</span> <div><strong>Chapter 10</strong></div></a>
+        <a href="chapter11.html" class="chapter-link"><span>11</span> <div><strong>Chapter 11</strong></div></a>
+        <a href="chapter12.html" class="chapter-link"><span>12</span> <div><strong>Chapter 12</strong></div></a>
+        <a href="chapter13.html" class="chapter-link"><span>13</span> <div><strong>Chapter 13</strong></div></a>
+        <a href="chapter14.html" class="chapter-link"><span>14</span> <div><strong>Chapter 14</strong></div></a>
+        <a href="chapter15.html" class="chapter-link"><span>15</span> <div><strong>Chapter 15</strong></div></a>
+        <a href="chapter16.html" class="chapter-link"><span>16</span> <div><strong>Chapter 16</strong></div></a>
+        <a href="chapter17.html" class="chapter-link"><span>17</span> <div><strong>Chapter 17</strong></div></a>
+        <a href="chapter18.html" class="chapter-link"><span>18</span> <div><strong>Chapter 18</strong></div></a>
+        <a href="chapter19.html" class="chapter-link"><span>19</span> <div><strong>Chapter 19</strong></div></a>
+        <a href="chapter20.html" class="chapter-link"><span>20</span> <div><strong>Chapter 20</strong></div></a>
+        <a href="chapter21.html" class="chapter-link"><span>21</span> <div><strong>Chapter 21</strong></div></a>
+        <a href="chapter22.html" class="chapter-link"><span>22</span> <div><strong>Chapter 22</strong></div></a>
+        <a href="chapter23.html" class="chapter-link"><span>23</span> <div><strong>Chapter 23</strong></div></a>
+        <a href="chapter24.html" class="chapter-link"><span>24</span> <div><strong>Chapter 24</strong></div></a>
+        <a href="chapter25.html" class="chapter-link"><span>25</span> <div><strong>Chapter 25</strong></div></a>
+        <a href="chapter26.html" class="chapter-link"><span>26</span> <div><strong>Chapter 26</strong></div></a>
+        <a href="chapter27.html" class="chapter-link"><span>27</span> <div><strong>Chapter 27</strong></div></a>
+        <a href="chapter28.html" class="chapter-link"><span>28</span> <div><strong>Chapter 28</strong></div></a>
+        <a href="chapter29.html" class="chapter-link"><span>29</span> <div><strong>Chapter 29</strong></div></a>
+        <a href="chapter30.html" class="chapter-link"><span>30</span> <div><strong>Chapter 30</strong></div></a>
+        <a href="chapter31.html" class="chapter-link"><span>31</span> <div><strong>Chapter 31</strong></div></a>
+        <a href="chapter32.html" class="chapter-link"><span>32</span> <div><strong>Chapter 32</strong></div></a>
+        <a href="chapter33.html" class="chapter-link"><span>33</span> <div><strong>Chapter 33</strong></div></a>
+        <a href="chapter34.html" class="chapter-link"><span>34</span> <div><strong>Chapter 34</strong></div></a>
+        <a href="chapter35.html" class="chapter-link"><span>35</span> <div><strong>Chapter 35</strong></div></a>
+        <a href="chapter36.html" class="chapter-link"><span>36</span> <div><strong>Chapter 36</strong></div></a>
+        <a href="chapter37.html" class="chapter-link"><span>37</span> <div><strong>Chapter 37</strong></div></a>
+        <a href="chapter38.html" class="chapter-link"><span>38</span> <div><strong>Chapter 38</strong></div></a>
+        <a href="chapter39.html" class="chapter-link"><span>39</span> <div><strong>Chapter 39</strong></div></a>
+        <a href="chapter40.html" class="chapter-link"><span>40</span> <div><strong>Chapter 40</strong></div></a>
+        <a href="chapter41.html" class="chapter-link"><span>41</span> <div><strong>Chapter 41</strong></div></a>
+        <a href="chapter42.html" class="chapter-link"><span>42</span> <div><strong>Chapter 42</strong></div></a>
+        <a href="chapter43.html" class="chapter-link"><span>43</span> <div><strong>Chapter 43</strong></div></a>
+        <a href="chapter44.html" class="chapter-link"><span>44</span> <div><strong>Chapter 44</strong></div></a>
+        <a href="chapter45.html" class="chapter-link"><span>45</span> <div><strong>Chapter 45</strong></div></a>
+        <a href="chapter46.html" class="chapter-link"><span>46</span> <div><strong>Chapter 46</strong></div></a>
+        <a href="chapter47.html" class="chapter-link"><span>47</span> <div><strong>Chapter 47</strong></div></a>
+        <a href="chapter48.html" class="chapter-link"><span>48</span> <div><strong>Chapter 48</strong></div></a>
+        <a href="chapter49.html" class="chapter-link"><span>49</span> <div><strong>Chapter 49</strong></div></a>
+        <a href="chapter50.html" class="chapter-link"><span>50</span> <div><strong>Chapter 50</strong></div></a>
+        <a href="chapter51.html" class="chapter-link"><span>51</span> <div><strong>Chapter 51</strong></div></a>
+        <a href="chapter52.html" class="chapter-link"><span>52</span> <div><strong>Chapter 52</strong></div></a>
+        <a href="chapter53.html" class="chapter-link"><span>53</span> <div><strong>Chapter 53</strong></div></a>
+        <a href="chapter54.html" class="chapter-link"><span>54</span> <div><strong>Chapter 54</strong></div></a>
+        <a href="chapter55.html" class="chapter-link"><span>55</span> <div><strong>Chapter 55</strong></div></a>
+        <a href="chapter56.html" class="chapter-link"><span>56</span> <div><strong>Chapter 56</strong></div></a>
+        <a href="chapter57.html" class="chapter-link"><span>57</span> <div><strong>Chapter 57</strong></div></a>
+        <a href="chapter58.html" class="chapter-link"><span>58</span> <div><strong>Chapter 58</strong></div></a>
+        <a href="chapter59.html" class="chapter-link"><span>59</span> <div><strong>Chapter 59</strong></div></a>
+        <a href="chapter60.html" class="chapter-link"><span>60</span> <div><strong>Chapter 60</strong></div></a>
+        <a href="chapter61.html" class="chapter-link"><span>61</span> <div><strong>Chapter 61</strong></div></a>
+        <a href="chapter62.html" class="chapter-link"><span>62</span> <div><strong>Chapter 62</strong></div></a>
+        <a href="chapter63.html" class="chapter-link"><span>63</span> <div><strong>Chapter 63</strong></div></a>
+        <a href="chapter64.html" class="chapter-link"><span>64</span> <div><strong>Chapter 64</strong></div></a>
+        <a href="chapter65.html" class="chapter-link"><span>65</span> <div><strong>Chapter 65</strong></div></a>
+        <a href="chapter66.html" class="chapter-link"><span>66</span> <div><strong>Chapter 66</strong></div></a>
+        <a href="chapter67.html" class="chapter-link"><span>67</span> <div><strong>Chapter 67</strong></div></a>
+        <a href="chapter68.html" class="chapter-link"><span>68</span> <div><strong>Chapter 68</strong></div></a>
+        <a href="chapter69.html" class="chapter-link"><span>69</span> <div><strong>Chapter 69</strong></div></a>
+        <a href="chapter70.html" class="chapter-link"><span>70</span> <div><strong>Chapter 70</strong></div></a>
+        <a href="chapter71.html" class="chapter-link"><span>71</span> <div><strong>Chapter 71</strong></div></a>
+        <a href="chapter72.html" class="chapter-link"><span>72</span> <div><strong>Chapter 72</strong></div></a>
+        <a href="chapter73.html" class="chapter-link"><span>73</span> <div><strong>Chapter 73</strong></div></a>
+        <a href="chapter74.html" class="chapter-link"><span>74</span> <div><strong>Chapter 74</strong></div></a>
+        <a href="chapter75.html" class="chapter-link"><span>75</span> <div><strong>Chapter 75</strong></div></a>
+        <a href="chapter76.html" class="chapter-link"><span>76</span> <div><strong>Chapter 76</strong></div></a>
+        <a href="chapter77.html" class="chapter-link"><span>77</span> <div><strong>Chapter 77</strong></div></a>
+        <a href="chapter78.html" class="chapter-link"><span>78</span> <div><strong>Chapter 78</strong></div></a>
+        <a href="chapter79.html" class="chapter-link"><span>79</span> <div><strong>Chapter 79</strong></div></a>
+        <a href="chapter80.html" class="chapter-link"><span>80</span> <div><strong>Chapter 80</strong></div></a>
+        <a href="chapter81.html" class="chapter-link"><span>81</span> <div><strong>Chapter 81</strong></div></a>
+        <a href="chapter82.html" class="chapter-link"><span>82</span> <div><strong>Chapter 82</strong></div></a>
+        <a href="chapter83.html" class="chapter-link"><span>83</span> <div><strong>Chapter 83</strong></div></a>
+        <a href="chapter84.html" class="chapter-link"><span>84</span> <div><strong>Chapter 84</strong></div></a>
+        <a href="chapter85.html" class="chapter-link"><span>85</span> <div><strong>Chapter 85</strong></div></a>
+        <a href="chapter86.html" class="chapter-link"><span>86</span> <div><strong>Chapter 86</strong></div></a>
+        <a href="chapter87.html" class="chapter-link"><span>87</span> <div><strong>Chapter 87</strong></div></a>
+        <a href="chapter88.html" class="chapter-link"><span>88</span> <div><strong>Chapter 88</strong></div></a>
+        <a href="chapter89.html" class="chapter-link"><span>89</span> <div><strong>Chapter 89</strong></div></a>
+        <a href="chapter90.html" class="chapter-link"><span>90</span> <div><strong>Chapter 90</strong></div></a>
+        <a href="chapter91.html" class="chapter-link"><span>91</span> <div><strong>Chapter 91</strong></div></a>
+        <a href="chapter92.html" class="chapter-link"><span>92</span> <div><strong>Chapter 92</strong></div></a>
+        <a href="chapter93.html" class="chapter-link"><span>93</span> <div><strong>Chapter 93</strong></div></a>
+        </div>
+    </div>
+
+    <!-- SETTINGS PANEL -->
+    <div class="settings-panel" id="settingsPanel">
+        <div class="settings-header">
+            <h3>Reading Settings</h3>
+            <button id="closeSettings">&times;</button>
+        </div>
+        
+        <div class="setting-group">
+            <label>Theme Style</label>
+            <div class="theme-grid">
+                <button onclick="applyTheme('dark')">Espresso Dark</button>
+                <button onclick="applyTheme('oled')">OLED Black</button>
+                <button onclick="applyTheme('cream')">Warm Cream</button>
+                <button onclick="applyTheme('midnight')">Midnight Blue</button>
+                <button onclick="applyTheme('emerald')">Emerald</button>
+            </div>
+        </div>
+
+        <div class="setting-group">
+            <label>Font Family</label>
+            <button class="font-option" onclick="applyFont('literata')">Literata (Classic)</button>
+            <button class="font-option" onclick="applyFont('inter')">Inter (Modern Sans)</button>
+            <button class="font-option" onclick="applyFont('nastaliq')">Urdu Nastaliq</button>
+        </div>
+
+        <div class="setting-group">
+            <label>Text Size</label>
+            <div class="size-buttons">
+                <button onclick="applySize('small')">Small</button>
+                <button onclick="applySize('medium')">Medium</button>
+                <button onclick="applySize('large')">Large</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN READING CANVAS -->
+    <div class="chapter-wrapper">
+        <main class="chapter-main-content">
+            <div class="chapter-header">
+                <span class="chapter-badge">CHAPTER 03</span>
+                <h1 class="chapter-title">Chapter 03</h1>
+                <div class="chapter-meta">
+                    <span>⏱️ 5 Min Read</span>
+                    <span>•</span>
+                    <span id="word-count">972 Words</span>
+                    <span>•</span>
+                    <span>Author: Umera Ahmed</span>
+                </div>
+            </div>
+
+            <!-- STORY BODY CONTENT (NO IMAGES - CONTINUOUS NOVEL FLOW) -->
+            <div class="story-body">
+                <p>Aapka beta duniya ki 2.5 percent abadi mein se haijinka IQ 150 se zyada hai. Is level kiintelligence ke sath, wo jo bhi kare, woh extraordinary hoga, lekin unexpected nahi. Salarsirf aik hafta hi International School mein tha jab Sikandar Usman aur unki biwi ko schooladministration ne bulaya. School ke psychologist ne unhain <span class="highlight-name" data-char="salar">Salar</span> kevarious IQ tests ke bare mein bataya jin mein uski performance aur score ne usketeachers aur psychologist ko hairan kar diya. Wo school ka akele bacha tha jiska IQitna zyada tha aur jald hi woh sab ki tawajju ka markaz ban gaya. Mr. aur Mrs. Usman se milte waqt, psychologist ko <span class="highlight-name" data-char="salar">Salar</span> ke bachpan ke bare meinzyada maloomat lene ka mauka mila. Woh <span class="highlight-name" data-char="salar">Salar</span> ke case ko personal interest se studykar raha tha, professional ke ilawa, kyunki pehli dafa usne itni high IQ level dekhatha. Sikandar Usman ko achi tarah yaad tha ke jab <span class="highlight-name" data-char="salar">Salar</span> sirf do saal ka tha, wo apniage ke dusre bachon se mukhtalif tha aur aksar cheezen aisi kehta tha jo unke liyehairat ka sabab banti thi. Ek din wo apne bhai se phone par baat kar rahe the jab <span class="highlight-name" data-char="salar">Salar</span> ne phone uthaya aur kaha,'Hello, Uncle, ye <span class="highlight-name" data-char="salar">Salar</span> hai.' Sikandar ne dekha wo khushi se baat kar raha tha. 'Maintheek hoon. Aap kaise hain?' Sikandar socha wo play-acting kar raha hai.  Agla jumla ne usse hairan kar diya. 'Baba yahin hain, TV dekh rahe hain. Nahi, unhone call nahikiya, main ne kiya hai.''<span class="highlight-name" data-char="salar">Salar</span>, tum kisse baat kar rahe ho?' Sikandar ne poocha.'Uncle Shahnawaz,' usne jawab diya. Sikandar ne usse phone le liya aur socha keSalar ne galti se number dial kiya hoga ya redial button daba diya hoga. '<span class="highlight-name" data-char="salar">Salar</span> nenumber dial kiya, mujhe maaf kijiyega,' usne apne bhai se maafi maangi.'Usne kaise kiya? Kya wo itna chhota nahi?' Uska bhai hairan tha. 'Shayad usne redialbutton galti se dabaya hoga.' Sikandar ne phone band kar diya aur wapas rakh diya. <span class="highlight-name" data-char="salar">Salar</span>, jo ye guftagu chup chap sun raha tha, wapas phone uthaya aur Shahnawaz kanumber bilkul tarteeb se dial kiya, bilkul jese koi bara karta. Sikandar hairan tha-usneexpect nahi kiya tha ke ek do saal ka bacha aisa kar sakta hai. Sikandar ne uski maa ko bulaya. 'Main ne ise numbers nahi sikhaye,' usne kaha.'Kal hi maine one to hundred tak ke numbers bataye the. Magar maine kuch books li thikuch din pehle.' Sikandar ne <span class="highlight-name" data-char="salar">Salar</span> se kaha ke wo ek se sau tak gino-usne ye kaam kardiya jab uski maa hairani se dekh rahi thi. Yaqeenan, bachay ki intelligence uske age keliye bohat aage thi, isliye usay school mein apne siblings se pehle hi enrollkarwa diya. Wo school mein bhi bohot accha tha.'Is bache ko aapki khas tawajju ki zarurat hai, kyunki aise bachay jo averageintelligence se zyada hote hain, unka mizaj sensitive aur complicated hota hai. Agar iskaupbringing accha ho, to ye aapke khandan ka, waqayi mulk ka asset ban sakta hai.' Sikandar Usman aur unki biwi psychologist ki baat sun kar fakhr mehsoos kar rahethe jo ek foreigner tha. Unho ne ghar mein <span class="highlight-name" data-char="salar">Salar</span> ko khaas tawajju dena shuru kar diya:wo sab se pyara aur favorite bacha ban gaya aur wo uski achievements par fakhrmehsoos karte. School mein, usay aik term ke baad hi agle class mein promote kar diya gaya, aurphir term ke end mein phir se promote kar diya gaya. Sikandar pareshan tha-wo nahichahta tha ke <span class="highlight-name" data-char="salar">Salar</span> sirf 8 aur 10 saal ki age mein O levels aur A levels de. Iskiprogress ki speed dekh kar, ye mumkin lag raha tha.'Mujhe chaahiye ke aap mera beta ek saal puri class mein rehnay dein pehle usayagle level par promote karein. Main nahi chahta ke wo abnormal speed se apniacademic career mein aage badhe. Aap uske subjects aur activities badha sakte hain, magar usay normal progress karne dein.' <span class="highlight-name" data-char="salar">Salar</span> ko mid-term promote nahi kiya gaya; uske talents aur energy ko sports aurdusri extra-curricular activities mein channel kiya gaya. Chess, tennis, golf aur music meinusay zyada dilchaspi thi aur school mein hone wali har cheez mein hissa leta- agar kisi cheez mein hissa nahi leta to sirf isliye ke usay wo challenging nahi lagti thi.</p>
+                <p>'Javeria, mujhe Professor Imtinan ke notes de do, kya tum dogi?' <span class="highlight-name" data-char="imama">Imama</span> ne Javeria sekaha jo padh rahi thi. Javeria ne usay ek notebook di jo usne dekhna shuru kiya. Javeria apni parhai mein lagi rahi, magar achanak <span class="highlight-name" data-char="imama">Imama</span> ki tarafdekha, jaise usaykuch yaad aaya. 'Tum ne lectures ke doran notes lena kyun chor diya hai?' <span class="highlight-name" data-char="imama">Imama</span> nedekha. 'Agar mujhe samajh aaye to leti.' 'Tumhara matlab kya hai? Tumhe Prof. Imtinan ke lectures samajh nahi aate?' Javeria hairan thi. 'Woh itne achay teacherhain.' 'Main ne kab kaha ke woh nahi hain? Bas ye ke...' <span class="highlight-name" data-char="imama">Imama</span> ne ruk kar kaha. Javeria ne usay gaur se dekha. 'Tum bohot absent-mindednahi ho gayi ho lately? Kya tum kisi cheez se pareshan ho?' Usne apni kitaab bandkar di; uski tone caring thi.'Pareshan?' <span class="highlight-name" data-char="imama">Imama</span> ne muttered kiya. 'Nahi...''Tumhare ankho ke neeche dark circles hain. Kal raat, mujhe lagta hai ke teen bajay, jabmain jaagi, tum ne ab tak nahi soyi thi.''Main parh rahi thi,' <span class="highlight-name" data-char="imama">Imama</span> ne defensively jawab diya.'Nahi, tum nahi parh rahi thi. Tumhari kitaab samne thi magar tumhare khayalatkahin aur the. Koi problem hai?''Kya problem ho sakta hai?''Phir tum itni khamosh kyun ho gayi ho?' Javeria ne <span class="highlight-name" data-char="imama">Imama</span> ke attempts to stall theconversation ko ignore kar diya.'Ab, mujhe kyun lafzon ki kami hogi?' <span class="highlight-name" data-char="imama">Imama</span> ne muskurane ki koshish ki. 'Main utni hi talkative hoon jitni pehle thi.''Ye sirf main nahi, dusre log bhi notice kar rahe hain ke tum pareshan ho,' Javeria neseriously kaha.'Kuch nahi-bas parhai ka usual tension hai.''Mujhe yaqeen nahi aata. Aakhir hum sab sath hain-tum hum se zyada tense nahi hosakti.' Javeria ne sar hilaya. <span class="highlight-name" data-char="imama">Imama</span> ne aah bhari-wo isse tang aa rahi thi.'Ghar mein sab theek hai?'</p>
+            </div>
+
+            <!-- BOTTOM CHAPTER NAVIGATION FOOTER CARDS -->
+                        <div class="scene-break">✦ &nbsp; ✦ &nbsp; ✦</div>
+            <footer class="chapter-nav-footer">
+        <a href="chapter2.html" class="chapter-nav-card prev">
+            <small>← PREVIOUS CHAPTER 02</small>
+            <strong>Chapter 02</strong>
+        </a>
+        <a href="chapter4.html" class="chapter-nav-card next">
+            <small>NEXT CHAPTER 04 →</small>
+            <strong>Chapter 04</strong>
+        </a>
+            </footer>
+        </main>
+
+        <!-- STICKY SIDEBAR -->
+        <aside class="chapter-sidebar">
+            <div class="sticky-sidebar-card">
+                <div class="sidebar-quote-box">
+                    "ہر سفر منزل کی تلاش نہیں ہوتا، کچھ سفر انسان کو خود اُس کی پہچان تک لے جاتے ہیں۔"
+                </div>
+
+                <div class="sidebar-widget-title">READING PROGRESS</div>
+                <div class="sidebar-progress-text" id="sidebar-scroll-percent">0%</div>
+
+                <div class="sidebar-widget-title">CHARACTER MENTIONS</div>
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <h4 id="salar-mentions">13</h4>
+                        <span>Salar</span>
+                    </div>
+                    <div class="stat-box">
+                        <h4 id="imama-mentions">9</h4>
+                        <span>Imama</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="settings-overlay" id="settingsOverlay"></div>
+
+    <script src="chapter.js"></script>
+    <script src="peer_e_kaamil.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            localStorage.setItem("last_read_chapter", "chapter3.html");
+            localStorage.setItem("last_read_title", "Chapter 03");
+        });
+    </script>
+</body>
+</html>

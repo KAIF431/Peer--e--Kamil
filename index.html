@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer-e-Kamil — An Urdu Novel Experience</title>
+
+    <!-- OpenGraph & Social Media Sharing Preview Cards -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Peer-e-Kamil — An Urdu Novel Experience">
+    <meta property="og:description" content="A profound Urdu digital novel unraveling the deep mysteries of faith, identity, guidance, and spiritual transformation. Written by Umera Ahmed.">
+    <meta property="og:image" content="peere_kamil.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        (function() {
+            var t = localStorage.getItem("selectedTheme") || localStorage.getItem("parda_theme") || "dark";
+            var f = localStorage.getItem("selectedFont") || localStorage.getItem("parda_font") || "literata";
+            var s = localStorage.getItem("selectedSize") || localStorage.getItem("parda_size") || "medium";
+            document.documentElement.setAttribute("data-theme", t);
+            document.documentElement.setAttribute("data-font", f);
+            document.documentElement.setAttribute("data-size", s);
+        })();
+    </script>
+</head>
+<body class="landing-body">
+
+    <!-- Particle Background Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Background Ambient Glows -->
+    <div class="ambient-glow glow-top"></div>
+    <div class="ambient-glow glow-bottom"></div>
+
+    <!-- SECTION 1: HERO ENTRANCE CURTAIN -->
+    <div class="landing-hero">
+        
+        <!-- Top Navigation Bar -->
+        <header class="landing-top-nav">
+            <div class="brand-tag">DIGITAL NOVEL · 2026</div>
+            <div style="display: flex; gap: 12px; align-items: center;">
+                <button class="audio-toggle-btn" onclick="toggleAmbient('calm', this)" title="Toggle Soft Calming Music" style="background: rgba(226, 184, 87, 0.15); border: 1px solid rgba(226, 184, 87, 0.4); color: #e2b857; padding: 0.45rem 1rem; border-radius: 20px; font-size: 0.8rem; cursor: pointer; font-family: 'Inter', sans-serif;">Sound</button>
+                <a href="peer_e_kaamil.html" class="nav-hub-link">Explore Novel Portal &rarr;</a>
+            </div>
+        </header>
+
+        <!-- Main Hero Card Floating Experience -->
+        <main class="hero-wrapper">
+            <div class="top-tagline anim-delay-1">✦ AN URDU NOVEL BY UMERA AHMED ✦</div>
+            
+            <h1 class="hero-title anim-delay-2">Peer <em class="gold-shimmer">-e- Kamil</em></h1>
+            
+            <div class="header-ornament anim-delay-3">
+                <span class="line"></span>
+                <span class="diamond">◆</span>
+                <span class="line"></span>
+            </div>
+
+            <p class="hero-urdu anim-delay-4">
+                راستے بدل جائیں تو منزل نہیں بدلتی،<br>نیت صاف ہو تو دعا کبھی خالی نہیں جاتی۔
+            </p>
+
+            <p class="hero-tagline anim-delay-5">
+                A profound literary journey unraveling the deep mysteries of faith, identity, guidance, and spiritual transformation through the paths of Imama Hashim and Salar Sikander.
+            </p>
+
+            <!-- Novel Meta Badges -->
+            <div class="novel-badges anim-delay-6">
+                <span class="badge">Author: Umera Ahmed</span>
+                <span class="badge">93 Complete Chapters</span>
+                <span class="badge">Multi-Part Reading</span>
+            </div>
+
+            <!-- Resume Reading Banner -->
+            <div class="landing-resume-bar anim-delay-6" id="resumeBar">
+                <span class="resume-icon">✦</span>
+                <span class="resume-text">Continue Reading:</span>
+                <a href="chapter1.html" id="resumeLink" class="resume-link">Chapter 01 — Ek Khwaab</a>
+            </div>
+
+            <!-- Main Hero Action CTAs -->
+            <div class="hero-actions anim-delay-7">
+                <a href="peer_e_kaamil.html" class="hero-enter-btn" id="enterStory">
+                    Enter Novel Portal <span class="arrow">&rarr;</span>
+                </a>
+                <a href="#chapters-gateway" class="hero-secondary-btn">
+                    Browse 93 Chapters &darr;
+                </a>
+            </div>
+        </main>
+    </div>
+
+    <!-- SECTION 2: THE 12 CHAPTER GATEWAYS SHOWCASE -->
+    <section class="index-gateway-section" id="chapters-gateway">
+        <div class="index-gateway-inner">
+            <div class="gateway-heading">
+                <span>TABLE OF CONTENTS</span>
+                <h2>The 93 Gateways Of The Story</h2>
+            </div>
+
+        <div class="gateway-grid">
+            <a href="chapter1.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">01</div>
+                    <div class="gateway-title">Chapter 01</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter2.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">02</div>
+                    <div class="gateway-title">Chapter 02</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter3.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">03</div>
+                    <div class="gateway-title">Chapter 03</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter4.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">04</div>
+                    <div class="gateway-title">Chapter 04</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter5.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">05</div>
+                    <div class="gateway-title">Chapter 05</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter6.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">06</div>
+                    <div class="gateway-title">Chapter 06</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter7.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">07</div>
+                    <div class="gateway-title">Chapter 07</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter8.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">08</div>
+                    <div class="gateway-title">Chapter 08</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter9.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">09</div>
+                    <div class="gateway-title">Chapter 09</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter10.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">10</div>
+                    <div class="gateway-title">Chapter 10</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter11.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">11</div>
+                    <div class="gateway-title">Chapter 11</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter12.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">12</div>
+                    <div class="gateway-title">Chapter 12</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter13.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">13</div>
+                    <div class="gateway-title">Chapter 13</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter14.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">14</div>
+                    <div class="gateway-title">Chapter 14</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter15.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">15</div>
+                    <div class="gateway-title">Chapter 15</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter16.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">16</div>
+                    <div class="gateway-title">Chapter 16</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter17.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">17</div>
+                    <div class="gateway-title">Chapter 17</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter18.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">18</div>
+                    <div class="gateway-title">Chapter 18</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter19.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">19</div>
+                    <div class="gateway-title">Chapter 19</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter20.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">20</div>
+                    <div class="gateway-title">Chapter 20</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter21.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">21</div>
+                    <div class="gateway-title">Chapter 21</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter22.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">22</div>
+                    <div class="gateway-title">Chapter 22</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter23.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">23</div>
+                    <div class="gateway-title">Chapter 23</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter24.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">24</div>
+                    <div class="gateway-title">Chapter 24</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter25.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">25</div>
+                    <div class="gateway-title">Chapter 25</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter26.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">26</div>
+                    <div class="gateway-title">Chapter 26</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter27.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">27</div>
+                    <div class="gateway-title">Chapter 27</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter28.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">28</div>
+                    <div class="gateway-title">Chapter 28</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter29.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">29</div>
+                    <div class="gateway-title">Chapter 29</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter30.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">30</div>
+                    <div class="gateway-title">Chapter 30</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter31.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">31</div>
+                    <div class="gateway-title">Chapter 31</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter32.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">32</div>
+                    <div class="gateway-title">Chapter 32</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter33.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">33</div>
+                    <div class="gateway-title">Chapter 33</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter34.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">34</div>
+                    <div class="gateway-title">Chapter 34</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter35.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">35</div>
+                    <div class="gateway-title">Chapter 35</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter36.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">36</div>
+                    <div class="gateway-title">Chapter 36</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter37.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">37</div>
+                    <div class="gateway-title">Chapter 37</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter38.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">38</div>
+                    <div class="gateway-title">Chapter 38</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter39.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">39</div>
+                    <div class="gateway-title">Chapter 39</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter40.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">40</div>
+                    <div class="gateway-title">Chapter 40</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter41.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">41</div>
+                    <div class="gateway-title">Chapter 41</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter42.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">42</div>
+                    <div class="gateway-title">Chapter 42</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter43.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">43</div>
+                    <div class="gateway-title">Chapter 43</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter44.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">44</div>
+                    <div class="gateway-title">Chapter 44</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter45.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">45</div>
+                    <div class="gateway-title">Chapter 45</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter46.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">46</div>
+                    <div class="gateway-title">Chapter 46</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter47.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">47</div>
+                    <div class="gateway-title">Chapter 47</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter48.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">48</div>
+                    <div class="gateway-title">Chapter 48</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter49.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">49</div>
+                    <div class="gateway-title">Chapter 49</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter50.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">50</div>
+                    <div class="gateway-title">Chapter 50</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter51.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">51</div>
+                    <div class="gateway-title">Chapter 51</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter52.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">52</div>
+                    <div class="gateway-title">Chapter 52</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter53.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">53</div>
+                    <div class="gateway-title">Chapter 53</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter54.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">54</div>
+                    <div class="gateway-title">Chapter 54</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter55.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">55</div>
+                    <div class="gateway-title">Chapter 55</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter56.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">56</div>
+                    <div class="gateway-title">Chapter 56</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter57.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">57</div>
+                    <div class="gateway-title">Chapter 57</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter58.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">58</div>
+                    <div class="gateway-title">Chapter 58</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter59.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">59</div>
+                    <div class="gateway-title">Chapter 59</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter60.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">60</div>
+                    <div class="gateway-title">Chapter 60</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter61.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">61</div>
+                    <div class="gateway-title">Chapter 61</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter62.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">62</div>
+                    <div class="gateway-title">Chapter 62</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter63.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">63</div>
+                    <div class="gateway-title">Chapter 63</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter64.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">64</div>
+                    <div class="gateway-title">Chapter 64</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter65.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">65</div>
+                    <div class="gateway-title">Chapter 65</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter66.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">66</div>
+                    <div class="gateway-title">Chapter 66</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter67.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">67</div>
+                    <div class="gateway-title">Chapter 67</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter68.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">68</div>
+                    <div class="gateway-title">Chapter 68</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter69.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">69</div>
+                    <div class="gateway-title">Chapter 69</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter70.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">70</div>
+                    <div class="gateway-title">Chapter 70</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter71.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">71</div>
+                    <div class="gateway-title">Chapter 71</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter72.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">72</div>
+                    <div class="gateway-title">Chapter 72</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter73.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">73</div>
+                    <div class="gateway-title">Chapter 73</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter74.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">74</div>
+                    <div class="gateway-title">Chapter 74</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter75.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">75</div>
+                    <div class="gateway-title">Chapter 75</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter76.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">76</div>
+                    <div class="gateway-title">Chapter 76</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter77.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">77</div>
+                    <div class="gateway-title">Chapter 77</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter78.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">78</div>
+                    <div class="gateway-title">Chapter 78</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter79.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">79</div>
+                    <div class="gateway-title">Chapter 79</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter80.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">80</div>
+                    <div class="gateway-title">Chapter 80</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter81.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">81</div>
+                    <div class="gateway-title">Chapter 81</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter82.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">82</div>
+                    <div class="gateway-title">Chapter 82</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter83.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">83</div>
+                    <div class="gateway-title">Chapter 83</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter84.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">84</div>
+                    <div class="gateway-title">Chapter 84</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter85.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">85</div>
+                    <div class="gateway-title">Chapter 85</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter86.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">86</div>
+                    <div class="gateway-title">Chapter 86</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter87.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">87</div>
+                    <div class="gateway-title">Chapter 87</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter88.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">88</div>
+                    <div class="gateway-title">Chapter 88</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter89.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">89</div>
+                    <div class="gateway-title">Chapter 89</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter90.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">90</div>
+                    <div class="gateway-title">Chapter 90</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter91.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">91</div>
+                    <div class="gateway-title">Chapter 91</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter92.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">92</div>
+                    <div class="gateway-title">Chapter 92</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+            <a href="chapter93.html" class="gateway-card">
+                <div>
+                    <div class="gateway-num">93</div>
+                    <div class="gateway-title">Chapter 93</div>
+                    <div class="gateway-meta">Full Chapter · Peer-e-Kamil</div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); font-style: italic; margin-top: 0.5rem; line-height: 1.5;">"Zindagi ki sab se bari khwahish? Salar aur Imama ke safar ki dastaan..."</p>
+                </div>
+                <div class="gateway-btn">Read Chapter &rarr;</div>
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="chapter.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const lastReadChapter = localStorage.getItem("last_read_chapter") || "chapter1.html";
+            const lastReadTitle = localStorage.getItem("last_read_title") || "Chapter 01 — Ek Khwaab";
+            const resumeBar = document.getElementById("resumeBar");
+            const resumeLink = document.getElementById("resumeLink");
+
+            if (resumeBar && resumeLink) {
+                resumeLink.href = lastReadChapter;
+                resumeLink.textContent = lastReadTitle;
+                resumeBar.style.display = "inline-flex";
+            }
+        });
+    </script>
+</body>
+</html>
