@@ -951,13 +951,14 @@
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const lastReadChapter = localStorage.getItem("last_read_chapter") || "chapter1.html";
-            const lastReadTitle = localStorage.getItem("last_read_title") || "Chapter 01 — Ek Khwaab";
             const resumeBar = document.getElementById("resumeBar");
             const resumeLink = document.getElementById("resumeLink");
 
             if (resumeBar && resumeLink) {
                 resumeLink.href = lastReadChapter;
-                resumeLink.textContent = lastReadTitle;
+                const match = lastReadChapter.match(/chapter(\d+)\.html/i);
+                const num = match ? match[1].padStart(2, '0') : '01';
+                resumeLink.textContent = "Chapter " + num;
                 resumeBar.style.display = "inline-flex";
             }
         });

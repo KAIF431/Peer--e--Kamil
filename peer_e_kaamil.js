@@ -140,8 +140,26 @@ document.addEventListener("click", (e) => {
     }
 });
 
+function syncResumeReadingButtons() {
+    try {
+        const lastRead = localStorage.getItem('last_read_chapter') || 'chapter1.html';
+        const match = lastRead.match(/chapter(\d+)\.html/i);
+        const num = match ? match[1] : "1";
+        const formattedNum = num.padStart(2, '0');
+
+        const resumeBtns = document.querySelectorAll('a[href*="chapter"].primary-button, .cta-group a, a#resumeReadingBtn');
+        resumeBtns.forEach(btn => {
+            if (btn.textContent.includes('Resume') || btn.textContent.includes('Continue') || btn.textContent.includes('Start')) {
+                btn.setAttribute('href', lastRead);
+                btn.innerHTML = `Resume Reading (Chapter ${formattedNum}) →`;
+            }
+        });
+    } catch(e) {}
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     loadSavedHomeHighlights();
+    syncResumeReadingButtons();
 });
 
 // Standard link navigation

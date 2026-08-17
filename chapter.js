@@ -203,6 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollToTop();
     });
 
+    let scrollTimeout;
     window.addEventListener('scroll', () => {
         const scrollTop = window.scrollY || document.documentElement.scrollTop;
         if (floatBtn) {
@@ -212,30 +213,56 @@ document.addEventListener('DOMContentLoaded', () => {
                 floatBtn.classList.remove('visible');
             }
         }
+
+        // Auto-save last read chapter and exact scroll position
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+            const currentFile = window.location.pathname.split('/').pop() || 'chapter1.html';
+            if (currentFile.includes('chapter')) {
+                localStorage.setItem('last_read_chapter', currentFile);
+                localStorage.setItem('last_read_scroll_' + currentFile, scrollTop);
+            }
+        }, 200);
     });
+
+    // Auto-restore reading scroll position when opening chapter
+    const currentFile = window.location.pathname.split('/').pop() || 'chapter1.html';
+    if (currentFile.includes('chapter')) {
+        localStorage.setItem('last_read_chapter', currentFile);
+        const savedScroll = localStorage.getItem('last_read_scroll_' + currentFile);
+        if (savedScroll && parseInt(savedScroll, 10) > 80) {
+            setTimeout(() => {
+                window.scrollTo({ top: parseInt(savedScroll, 10), behavior: 'smooth' });
+            }, 300);
+        }
+    }
 });
 
 // Global Theme Switchers
-function applyTheme(themeName) {
-    document.documentElement.setAttribute('data-theme', themeName);
-    if (document.body) document.body.setAttribute('data-theme', themeName);
-    localStorage.setItem('selectedTheme', themeName);
-    localStorage.setItem('parda_theme', themeName);
-}
+window.applyTheme = function(themeName) {
+    if (!themeName) return;
+    const t = (themeName === 'default') ? 'dark' : themeName;
+    document.documentElement.setAttribute('data-theme', t);
+    if (document.body) document.body.setAttribute('data-theme', t);
+    localStorage.setItem('selectedTheme', t);
+    localStorage.setItem('parda_theme', t);
+};
 
-function applyFont(fontName) {
+window.applyFont = function(fontName) {
+    if (!fontName) return;
     document.documentElement.setAttribute('data-font', fontName);
     if (document.body) document.body.setAttribute('data-font', fontName);
     localStorage.setItem('selectedFont', fontName);
     localStorage.setItem('parda_font', fontName);
-}
+};
 
-function applySize(sizeName) {
+window.applySize = function(sizeName) {
+    if (!sizeName) return;
     document.documentElement.setAttribute('data-size', sizeName);
     if (document.body) document.body.setAttribute('data-size', sizeName);
     localStorage.setItem('selectedSize', sizeName);
     localStorage.setItem('parda_size', sizeName);
-}
+};
 
 // ==========================================
 // FLOATING TEXT SELECTION & READER HIGHLIGHTER SYSTEM
